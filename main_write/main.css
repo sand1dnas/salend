@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+  }
+  
+  nav{
+      width: 200px;
+      background-color: #fff;
+      border-right: 1px solid #ddd;
+      position: fixed;
+      height: 100%;
+  }
+
+  .menu li a{
+      height: 30px;
+      line-height: 160%;
+      display: block;
+      padding:0 20px;
+      font-size: 20px;
+      color: #555;
+      text-decoration-line: none;
+      
+  }
+
+  .menu li a:hover {background-color: #4BC5A0; color:white;}

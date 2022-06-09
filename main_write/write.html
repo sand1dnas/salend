@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공지사항</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li class="material-symbols-outlined">
+                <a href="write.html">
+                menu 상품 등록
+                </a>
+                </li>
+            <li class="material-symbols-outlined">
+                <a href="manage.html">
+                     menu 상품 관리
+                </a>
+            </li>
+            <li class="material-symbols-outlined">
+                <a href="store.html">
+                    menu 매장 설정
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="board_wrap">
+        <div class="board_title">
+            <strong>물품등록</strong>
+            <p>물품등록하기</p>
+        </div>
+        <div class="board_write_wrap">
+            <div class="board_write">
+                <div class="title">
+                    <dl>
+                        <dt>제목</dt>
+                        <dd><input type="text" placeholder="제목 입력"></dd>
+                    </dl>
+                </div>
+                <div class="info">
+                    <dl>
+                        <dt>원가</dt>
+                        <dd><input type="price_1" placeholder="가격 입력"></dd>
+                    </dl>
+                    <dl>
+                        <dt>할인가</dt>
+                        <dd><input type="price_1" placeholder="할인가 입력"></dd>
+                    </dl>
+                </div>
+                <div class="info_2">
+                    <dl>
+                        <dt>할인율</dt>
+                        <dd><input type="text_2" placeholder="할인율"></dd>
+                    </dl>
+                    <dl>
+                        <dt>유통기한</dt>
+                        <dd><input type="text_2" placeholder="MM/DD"></dd>
+                    </dl>
+                </div>
+                <div class="tag">
+                    <dl>
+                        <dt>카테고리</dt>
+                    <span class="category">
+                        <select id="pick" class="sel">
+                            <option>선택 안함</option>
+                                    <option value="01">한식</option>
+                                    <option value="02">일식</option>
+                                    <option value="03">중식</option>
+                                    <option value="04">양식</option>
+                                    <option value="05">분식</option>
+                                    <option value="06">카페</option>
+                                    <option value="07">편의점</option>
+                                    <option value="08">베이커리</option>
+                        </select>
+                    </span>
+                    </dl>
+                </div>
+                
+                <div class="button">
+                </div>
+                <input type="file" id="chooseFile" name="chooseFile" accept="image/*" onchange="loadFile(this)">
+                
+                <div class="cont">
+                    <textarea placeholder="내용 입력"></textarea>
+                </div>
+            </div>
+            <div class="bt_wrap">
+                <a href=".html" class="on">등록</a>
+                <a href=".html">취소</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
